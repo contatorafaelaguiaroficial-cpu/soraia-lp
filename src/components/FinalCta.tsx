@@ -1,4 +1,5 @@
 import { Badge, ButtonPrimary, Container } from "./ui";
+import { CHECKOUT_URL } from "@/lib/links";
 
 export function FinalCta() {
   return (
@@ -16,7 +17,7 @@ export function FinalCta() {
           Organize gastos, acompanhe metas e tome decisões financeiras com
           mais segurança — sem precisar conectar seu banco a mais um app.
         </p>
-        <ButtonPrimary href="#planos" className="mt-2">
+        <ButtonPrimary href={CHECKOUT_URL} className="mt-2">
           Assinar Soraia Pro agora
         </ButtonPrimary>
       </Container>

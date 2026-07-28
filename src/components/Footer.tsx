@@ -1,4 +1,5 @@
 import { Container } from "./ui";
+import { LOGIN_URL } from "@/lib/links";
 
 export function Footer() {
   return (
@@ -10,7 +11,7 @@ export function Footer() {
         </p>
         <div className="flex items-center gap-6">
           <a
-            href="#top"
+            href={LOGIN_URL}
             className="text-sm text-slate-400 transition-colors hover:text-white"
           >
             Já sou cliente

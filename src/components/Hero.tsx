@@ -1,4 +1,5 @@
 import { Badge, ButtonPrimary, ButtonSecondary, Container } from "./ui";
+import { CHECKOUT_URL, LOGIN_URL } from "@/lib/links";
 
 const trustItems = [
   "Não pedimos acesso ao seu banco",
@@ -34,8 +35,8 @@ export function Hero() {
         </p>
 
         <div className="flex flex-col gap-4 sm:flex-row">
-          <ButtonPrimary href="#planos">Criar conta grátis</ButtonPrimary>
-          <ButtonSecondary href="#planos">
+          <ButtonPrimary href={LOGIN_URL}>Criar conta grátis</ButtonPrimary>
+          <ButtonSecondary href={CHECKOUT_URL}>
             Conhecer o Soraia Pro — R$ 19,90/mês
           </ButtonSecondary>
         </div>

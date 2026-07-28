@@ -1,4 +1,5 @@
 import { Container } from "./ui";
+import { LOGIN_URL } from "@/lib/links";
 
 const links = [
   { label: "O problema", href: "#problema" },
@@ -34,7 +35,7 @@ export function Header() {
         </nav>
 
         <a
-          href="#planos"
+          href={LOGIN_URL}
           className="inline-flex items-center justify-center rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-slate-950 transition-transform hover:scale-[1.03]"
         >
           Criar conta grátis
