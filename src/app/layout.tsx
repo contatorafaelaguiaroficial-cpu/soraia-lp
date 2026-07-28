@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Soraia — Sua vida financeira organizada com inteligência",
+  title: "Soraia — Sua assistente financeira",
   description:
-    "Controle gastos, metas, contas e decisões financeiras com a ajuda da Soraia, sua assistente financeira pessoal com inteligência artificial.",
+    "Registre gastos, acompanhe contas, organize metas e entenda como seu saldo ficará conversando com uma assistente financeira pelo celular.",
 };
 
 export default function RootLayout({
@@ -26,9 +26,11 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${geistSans.variable} ${geistMono.variable}`}
+      className={`${geistSans.variable} ${geistMono.variable} dark h-full antialiased`}
     >
-      <body>{children}</body>
+      <body className="min-h-full flex flex-col bg-[#05060c] text-[#f4f5fb]">
+        {children}
+      </body>
     </html>
   );
 }
