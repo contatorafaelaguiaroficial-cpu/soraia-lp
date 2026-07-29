@@ -1,4 +1,4 @@
-import { Badge, ButtonPrimary, ButtonSecondary, Container } from "./ui";
+import { Badge, ButtonPrimary, Container } from "./ui";
 import { RevealGroup, RevealItem } from "./Reveal";
 
 const trustItems = [
@@ -46,11 +46,10 @@ export function Hero() {
             </p>
           </RevealItem>
 
-          <RevealItem className="flex flex-col gap-4 sm:flex-row">
-            <ButtonPrimary href="#planos">Testar grátis agora</ButtonPrimary>
-            <ButtonSecondary href="#planos">
+          <RevealItem>
+            <ButtonPrimary href="#planos">
               Assinar Soraia Pro — R$ 19,90/mês
-            </ButtonSecondary>
+            </ButtonPrimary>
           </RevealItem>
 
           <RevealItem className="mt-4 flex flex-wrap items-center justify-center gap-x-8 gap-y-3">

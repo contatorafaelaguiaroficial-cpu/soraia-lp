@@ -10,12 +10,8 @@ const faqs = [
     a: "Não. Você registra suas movimentações por texto ou áudio, no seu ritmo. A Soraia nunca pede login ou senha do seu banco.",
   },
   {
-    q: "O que está disponível no plano Free?",
-    a: "O Free permite usar o dashboard, cadastrar movimentações manualmente, acompanhar metas e conversar por texto com limite de 10 mensagens mensais.",
-  },
-  {
-    q: "O que o Soraia Pro libera?",
-    a: "O Pro libera mensagens por áudio, conversas sem limite prático e criação de movimentações, metas e aportes diretamente pelo chat.",
+    q: "O que a assinatura Pro inclui?",
+    a: "Dashboard financeiro completo, agenda e metas, conversas sem limite prático por texto e áudio, e criação de movimentações, metas e aportes direto pelo chat.",
   },
   {
     q: "Como o plano é ativado depois da compra?",

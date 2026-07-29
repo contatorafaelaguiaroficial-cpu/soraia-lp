@@ -19,7 +19,7 @@ export function FinalCta() {
             100% do seu dinheiro — sem perguntas, sem burocracia.
           </p>
           <ButtonPrimary href="#planos" className="mt-2">
-            Testar Soraia Pro agora
+            Assinar Soraia Pro agora
           </ButtonPrimary>
         </Reveal>
       </Container>
