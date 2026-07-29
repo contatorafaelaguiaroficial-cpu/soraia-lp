@@ -48,7 +48,7 @@ export function Hero() {
 
           <RevealItem>
             <ButtonPrimary href="#planos">
-              Ativar agora — R$ 19,90/mês
+              Quero ativar a Soraia
             </ButtonPrimary>
           </RevealItem>
 
