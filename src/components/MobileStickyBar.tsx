@@ -9,7 +9,7 @@ export function MobileStickyBar() {
           <p className="text-xs text-slate-400">Áudio e experiência completa</p>
         </div>
         <a
-          href="#planos"
+          href="https://pay.cakto.com.br/y6cwwbn_1005908"
           className="inline-flex shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-violet-500 to-teal-400 px-5 py-2.5 text-sm font-semibold text-slate-950"
         >
           Ativar agora

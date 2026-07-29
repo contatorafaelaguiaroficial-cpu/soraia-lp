@@ -57,7 +57,7 @@ export function PricingSection() {
             </ul>
 
             <a
-              href="#top"
+              href="https://pay.cakto.com.br/y6cwwbn_1005908"
               className="mt-auto inline-flex items-center justify-center rounded-full bg-gradient-to-r from-violet-500 to-teal-400 px-6 py-3 text-sm font-semibold text-slate-950 transition-transform hover:scale-[1.02]"
             >
               Ativar agora

@@ -50,7 +50,7 @@ export function HowItWorks() {
             Esqueça a planilha.{" "}
             <span className="gradient-text">Fale com a Soraia.</span>
           </p>
-          <ButtonPrimary href="#planos">Começar agora</ButtonPrimary>
+          <ButtonPrimary href="https://pay.cakto.com.br/y6cwwbn_1005908">Começar agora</ButtonPrimary>
         </div>
       </Container>
     </section>
