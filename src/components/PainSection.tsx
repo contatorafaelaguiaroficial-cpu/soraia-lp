@@ -1,4 +1,5 @@
 import { Container, SectionHeading } from "./ui";
+import { Reveal, RevealGroup, RevealItem } from "./Reveal";
 
 const pains = [
   {
@@ -31,9 +32,9 @@ export function PainSection() {
           description="Sem uma visão clara, qualquer decisão financeira vira uma tentativa."
         />
 
-        <div className="grid w-full gap-6 sm:grid-cols-3">
+        <RevealGroup className="grid w-full gap-6 sm:grid-cols-3">
           {pains.map((pain, i) => (
-            <div
+            <RevealItem
               key={pain.title}
               className="card-surface flex flex-col gap-4 rounded-2xl p-6"
             >
@@ -46,11 +47,11 @@ export function PainSection() {
               <p className="text-sm leading-relaxed text-slate-400">
                 {pain.text}
               </p>
-            </div>
+            </RevealItem>
           ))}
-        </div>
+        </RevealGroup>
 
-        <div className="w-full rounded-3xl border border-white/[0.07] bg-gradient-to-br from-violet-500/[0.08] to-teal-400/[0.05] p-8 sm:p-10">
+        <Reveal className="w-full rounded-3xl border border-white/[0.07] bg-gradient-to-br from-violet-500/[0.08] to-teal-400/[0.05] p-8 sm:p-10">
           <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
             <div className="max-w-md">
               <h3 className="text-2xl font-semibold text-white">
@@ -88,7 +89,7 @@ export function PainSection() {
               ))}
             </ul>
           </div>
-        </div>
+        </Reveal>
       </Container>
     </section>
   );

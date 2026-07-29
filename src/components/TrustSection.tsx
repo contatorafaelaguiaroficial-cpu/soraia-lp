@@ -1,4 +1,5 @@
 import { Container, SectionHeading } from "./ui";
+import { RevealGroup, RevealItem } from "./Reveal";
 
 const points = [
   {
@@ -50,9 +51,9 @@ export function TrustSection() {
           description="A Soraia nunca pede login, senha ou acesso à sua conta bancária. Você decide o que registrar e quando — seus dados financeiros ficam só entre você e a Soraia, protegidos e nunca compartilhados com terceiros."
         />
 
-        <div className="grid w-full gap-6 sm:grid-cols-3">
+        <RevealGroup className="grid w-full gap-6 sm:grid-cols-3">
           {points.map((point) => (
-            <div
+            <RevealItem
               key={point.title}
               className="card-surface flex flex-col gap-4 rounded-2xl p-6"
             >
@@ -67,9 +68,9 @@ export function TrustSection() {
               <p className="text-sm leading-relaxed text-slate-400">
                 {point.text}
               </p>
-            </div>
+            </RevealItem>
           ))}
-        </div>
+        </RevealGroup>
       </Container>
     </section>
   );

@@ -1,5 +1,5 @@
 import { ButtonPrimary, Container, SectionHeading } from "./ui";
-import { LOGIN_URL } from "@/lib/links";
+import { RevealGroup, RevealItem } from "./Reveal";
 
 const features = [
   {
@@ -38,9 +38,9 @@ export function FeaturesSection() {
           description="A Soraia transforma informações comuns em uma visão financeira mais prática, clara e fácil de acompanhar."
         />
 
-        <div className="grid w-full gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <RevealGroup className="grid w-full gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, i) => (
-            <div
+            <RevealItem
               key={feature.title}
               className="card-surface flex flex-col gap-3 rounded-2xl p-6 transition-colors hover:bg-white/[0.05]"
             >
@@ -53,11 +53,11 @@ export function FeaturesSection() {
               <p className="text-sm leading-relaxed text-slate-400">
                 {feature.text}
               </p>
-            </div>
+            </RevealItem>
           ))}
-        </div>
+        </RevealGroup>
 
-        <ButtonPrimary href={LOGIN_URL}>
+        <ButtonPrimary href="#planos">
           Quero controlar meu dinheiro agora
         </ButtonPrimary>
       </Container>

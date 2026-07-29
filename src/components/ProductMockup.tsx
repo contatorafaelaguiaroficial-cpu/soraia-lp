@@ -1,4 +1,6 @@
 import { Container } from "./ui";
+import { Reveal } from "./Reveal";
+import { CountUp } from "./CountUp";
 
 function IconSparkles() {
   return (
@@ -82,10 +84,10 @@ function IconMic() {
 }
 
 const metrics = [
-  { icon: <IconWallet />, tone: "text-violet-300 bg-violet-400/15", label: "Saldo disponível", value: "R$ 2.480" },
-  { icon: <IconUp />, tone: "text-emerald-300 bg-emerald-400/15", label: "Receitas do mês", value: "R$ 8.868" },
-  { icon: <IconDown />, tone: "text-red-300 bg-red-400/15", label: "Despesas do mês", value: "R$ 7.147" },
-  { icon: <IconCalendarClock />, tone: "text-orange-300 bg-orange-400/15", label: "Pagamentos futuros", value: "R$ 612" },
+  { icon: <IconWallet />, tone: "text-violet-300 bg-violet-400/15", label: "Saldo disponível", value: 2480 },
+  { icon: <IconUp />, tone: "text-emerald-300 bg-emerald-400/15", label: "Receitas do mês", value: 8868 },
+  { icon: <IconDown />, tone: "text-red-300 bg-red-400/15", label: "Despesas do mês", value: 7147 },
+  { icon: <IconCalendarClock />, tone: "text-orange-300 bg-orange-400/15", label: "Pagamentos futuros", value: 612 },
 ];
 
 export function ProductMockup() {
@@ -101,7 +103,7 @@ export function ProductMockup() {
           </h2>
         </div>
 
-        <div className="mx-auto max-w-5xl overflow-hidden rounded-[1.5rem] border border-white/10 shadow-[0_40px_80px_-40px_rgba(139,92,246,0.35)]">
+        <Reveal className="mx-auto max-w-5xl overflow-hidden rounded-[1.5rem] border border-white/10 shadow-[0_40px_80px_-40px_rgba(139,92,246,0.35)]">
           <div className="flex items-center gap-2 border-b border-white/[0.06] bg-white/[0.03] px-4 py-3">
             <span className="h-2.5 w-2.5 rounded-full bg-red-400/70" />
             <span className="h-2.5 w-2.5 rounded-full bg-amber-300/70" />
@@ -141,9 +143,11 @@ export function ProductMockup() {
               <div className="relative mx-auto flex h-44 w-44 shrink-0 items-center justify-center rounded-full border border-violet-400/20 bg-gradient-to-br from-violet-500/10 to-teal-400/10">
                 <div className="flex h-32 w-32 flex-col items-center justify-center rounded-full border border-white/10 bg-[#0a0d18] text-center">
                   <span className="text-[11px] text-slate-400">Saldo atual</span>
-                  <strong className="text-xl font-extrabold text-white">
-                    R$ 2.480
-                  </strong>
+                  <CountUp
+                    to={2480}
+                    prefix="R$ "
+                    className="text-xl font-extrabold text-white"
+                  />
                   <span className="text-[10px] text-slate-500">
                     movimentações efetivadas
                   </span>
@@ -171,7 +175,11 @@ export function ProductMockup() {
                     {m.icon}
                   </div>
                   <p className="text-[11px] text-slate-500">{m.label}</p>
-                  <p className="text-sm font-bold text-white">{m.value}</p>
+                  <CountUp
+                    to={m.value}
+                    prefix="R$ "
+                    className="text-sm font-bold text-white"
+                  />
                 </div>
               ))}
             </div>
@@ -191,9 +199,11 @@ export function ProductMockup() {
                 </div>
                 <div className="mt-4 flex items-baseline gap-2">
                   <span className="text-xs text-slate-500">Saldo previsto</span>
-                  <strong className="text-2xl font-extrabold text-white">
-                    R$ 2.980
-                  </strong>
+                  <CountUp
+                    to={2980}
+                    prefix="R$ "
+                    className="text-2xl font-extrabold text-white"
+                  />
                 </div>
                 <div className="mt-4 flex flex-col gap-2 border-t border-white/[0.06] pt-4 text-sm">
                   <div className="flex justify-between text-slate-400">
@@ -257,7 +267,7 @@ export function ProductMockup() {
               </div>
             </div>
           </div>
-        </div>
+        </Reveal>
       </Container>
     </section>
   );

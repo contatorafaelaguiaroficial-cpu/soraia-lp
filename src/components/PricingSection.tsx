@@ -1,5 +1,5 @@
 import { Container, SectionHeading } from "./ui";
-import { CHECKOUT_URL, LOGIN_URL } from "@/lib/links";
+import { Reveal } from "./Reveal";
 
 function CheckItem({ children }: { children: string }) {
   return (
@@ -27,7 +27,7 @@ export function PricingSection() {
           title="Comece grátis. Evolua quando fizer sentido."
         />
 
-        <div className="grid w-full max-w-3xl gap-6 md:grid-cols-2">
+        <Reveal className="grid w-full max-w-3xl gap-6 md:grid-cols-2">
           <div className="card-surface flex flex-col gap-6 rounded-3xl p-8">
             <div>
               <h3 className="text-lg font-semibold text-white">Soraia Free</h3>
@@ -49,7 +49,7 @@ export function PricingSection() {
             </ul>
 
             <a
-              href={LOGIN_URL}
+              href="#top"
               className="mt-auto inline-flex items-center justify-center rounded-full border border-white/15 bg-white/[0.03] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/[0.08]"
             >
               Testar grátis agora
@@ -84,7 +84,7 @@ export function PricingSection() {
             </ul>
 
             <a
-              href={CHECKOUT_URL}
+              href="#top"
               className="mt-auto inline-flex items-center justify-center rounded-full bg-gradient-to-r from-violet-500 to-teal-400 px-6 py-3 text-sm font-semibold text-slate-950 transition-transform hover:scale-[1.02]"
             >
               Quero o Pro agora
@@ -93,7 +93,7 @@ export function PricingSection() {
               Menos de R$ 0,67 por dia · 7 dias de garantia incondicional
             </p>
           </div>
-        </div>
+        </Reveal>
       </Container>
     </section>
   );

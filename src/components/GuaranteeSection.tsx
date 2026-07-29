@@ -1,4 +1,5 @@
 import { Container } from "./ui";
+import { Reveal } from "./Reveal";
 
 function IconShield() {
   return (
@@ -24,7 +25,7 @@ export function GuaranteeSection() {
   return (
     <section className="relative py-24 sm:py-32">
       <Container>
-        <div className="mx-auto flex max-w-2xl flex-col items-center gap-5 rounded-[2rem] border border-emerald-400/20 bg-gradient-to-b from-emerald-400/[0.06] to-transparent p-10 text-center sm:p-14">
+        <Reveal className="mx-auto flex max-w-2xl flex-col items-center gap-5 rounded-[2rem] border border-emerald-400/20 bg-gradient-to-b from-emerald-400/[0.06] to-transparent p-10 text-center sm:p-14">
           <div className="flex h-14 w-14 items-center justify-center rounded-full bg-emerald-400/10 text-emerald-300">
             <IconShield />
           </div>
@@ -36,7 +37,7 @@ export function GuaranteeSection() {
             100% do seu dinheiro, sem perguntas e sem burocracia. O risco é
             nosso, não seu.
           </p>
-        </div>
+        </Reveal>
       </Container>
     </section>
   );

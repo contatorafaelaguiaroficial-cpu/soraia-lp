@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Container, SectionHeading } from "./ui";
+import { Reveal } from "./Reveal";
 
 const faqs = [
   {
@@ -41,7 +42,7 @@ export function FaqSection() {
           title="Tudo o que você precisa saber."
         />
 
-        <div className="w-full max-w-2xl divide-y divide-white/[0.07] card-surface rounded-2xl">
+        <Reveal className="w-full max-w-2xl divide-y divide-white/[0.07] card-surface rounded-2xl">
           {faqs.map((faq, i) => {
             const isOpen = open === i;
             return (
@@ -84,7 +85,7 @@ export function FaqSection() {
               </div>
             );
           })}
-        </div>
+        </Reveal>
       </Container>
     </section>
   );

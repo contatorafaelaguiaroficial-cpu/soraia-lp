@@ -1,5 +1,5 @@
 import { ButtonPrimary, Container, SectionHeading } from "./ui";
-import { LOGIN_URL } from "@/lib/links";
+import { RevealGroup, RevealItem } from "./Reveal";
 
 const steps = [
   {
@@ -26,9 +26,9 @@ export function HowItWorks() {
           description="Sem curva de aprendizado, sem configuração complicada. Se você sabe mandar uma mensagem, você já sabe usar a Soraia."
         />
 
-        <div className="grid w-full gap-6 sm:grid-cols-3">
+        <RevealGroup className="grid w-full gap-6 sm:grid-cols-3">
           {steps.map((step, i) => (
-            <div
+            <RevealItem
               key={step.title}
               className="card-surface relative flex flex-col gap-4 rounded-2xl p-6"
             >
@@ -41,16 +41,16 @@ export function HowItWorks() {
               <p className="text-sm leading-relaxed text-slate-400">
                 {step.text}
               </p>
-            </div>
+            </RevealItem>
           ))}
-        </div>
+        </RevealGroup>
 
         <div className="flex flex-col items-center gap-5 text-center">
           <p className="text-lg font-medium text-white">
             Esqueça a planilha.{" "}
             <span className="gradient-text">Fale com a Soraia.</span>
           </p>
-          <ButtonPrimary href={LOGIN_URL}>Começar agora</ButtonPrimary>
+          <ButtonPrimary href="#planos">Começar agora</ButtonPrimary>
         </div>
       </Container>
     </section>

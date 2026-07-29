@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
+import { TrustTicker } from "@/components/TrustTicker";
 import { ProductMockup } from "@/components/ProductMockup";
 import { AssistantDemo } from "@/components/AssistantDemo";
 import { HowItWorks } from "@/components/HowItWorks";
@@ -20,6 +21,7 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero />
+        <TrustTicker />
         <ProductMockup />
         <AssistantDemo />
         <HowItWorks />

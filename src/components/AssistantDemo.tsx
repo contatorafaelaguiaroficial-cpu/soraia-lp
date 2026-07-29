@@ -1,4 +1,6 @@
 import { Container } from "./ui";
+import { Reveal } from "./Reveal";
+import { AssistantChatDemo } from "./AssistantChatDemo";
 
 function IconSparkles() {
   return (
@@ -69,7 +71,7 @@ export function AssistantDemo() {
           </p>
         </div>
 
-        <div className="mx-auto grid w-full max-w-5xl gap-4 rounded-[1.5rem] border border-white/10 bg-gradient-to-b from-white/[0.03] to-transparent p-4 shadow-[0_40px_80px_-40px_rgba(139,92,246,0.35)] sm:p-6 lg:grid-cols-5">
+        <Reveal className="mx-auto grid w-full max-w-5xl gap-4 rounded-[1.5rem] border border-white/10 bg-gradient-to-b from-white/[0.03] to-transparent p-4 shadow-[0_40px_80px_-40px_rgba(139,92,246,0.35)] sm:p-6 lg:grid-cols-5">
           <div className="card-surface flex flex-col gap-4 rounded-2xl p-5 lg:col-span-2">
             <div className="flex h-9 w-9 items-center justify-center rounded-full bg-violet-400/15 text-violet-300">
               <IconSparkles />
@@ -125,21 +127,7 @@ export function AssistantDemo() {
               </span>
             </div>
 
-            <div className="flex flex-1 flex-col gap-3 py-5">
-              <div className="max-w-[85%] rounded-2xl rounded-bl-sm border border-white/[0.06] bg-white/[0.03] px-4 py-3 text-sm leading-relaxed text-slate-300">
-                Olá! Eu sou a Soraia. Posso analisar seu saldo, compromissos
-                futuros e movimentações para ajudar você a tomar decisões
-                financeiras mais conscientes.
-              </div>
-              <div className="ml-auto max-w-[80%] rounded-2xl rounded-br-sm bg-white/[0.08] px-4 py-3 text-sm text-white">
-                Posso gastar R$ 500,00 hoje?
-              </div>
-              <div className="max-w-[85%] rounded-2xl rounded-bl-sm border border-white/[0.06] bg-white/[0.03] px-4 py-3 text-sm leading-relaxed text-slate-300">
-                Seu saldo atual permite essa compra, mas seus próximos
-                compromissos pedem atenção. Depois da compra, sua margem
-                ficará menor.
-              </div>
-            </div>
+            <AssistantChatDemo />
 
             <div className="flex items-center gap-3 rounded-full border border-white/[0.08] bg-white/[0.02] px-4 py-2.5">
               <span className="flex-1 text-sm text-slate-500">
@@ -157,7 +145,7 @@ export function AssistantDemo() {
               orientação profissional.
             </p>
           </div>
-        </div>
+        </Reveal>
       </Container>
     </section>
   );
