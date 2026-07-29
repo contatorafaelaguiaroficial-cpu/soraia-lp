@@ -11,7 +11,7 @@ export function Footer() {
           </p>
           <div className="flex items-center gap-6">
             <a
-              href="https://soraiapp.com.br/login"
+              href="#top"
               className="text-sm text-slate-400 transition-colors hover:text-white"
             >
               Já sou cliente

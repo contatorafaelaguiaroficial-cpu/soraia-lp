@@ -18,7 +18,7 @@ export function FinalCta() {
             Teste o Soraia Pro por 7 dias. Se não for pra você, devolvemos
             100% do seu dinheiro — sem perguntas, sem burocracia.
           </p>
-          <ButtonPrimary href="https://pay.cakto.com.br/y6cwwbn_1005908" className="mt-2">
+          <ButtonPrimary href="#planos" className="mt-2">
             Quero minha Soraia agora
           </ButtonPrimary>
         </Reveal>

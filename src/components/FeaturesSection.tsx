@@ -57,7 +57,7 @@ export function FeaturesSection() {
           ))}
         </RevealGroup>
 
-        <ButtonPrimary href="https://pay.cakto.com.br/y6cwwbn_1005908">
+        <ButtonPrimary href="#planos">
           Quero controlar meu dinheiro agora
         </ButtonPrimary>
       </Container>

@@ -47,7 +47,7 @@ export function Hero() {
           </RevealItem>
 
           <RevealItem>
-            <ButtonPrimary href="https://pay.cakto.com.br/y6cwwbn_1005908">
+            <ButtonPrimary href="#planos">
               Quero ativar a Soraia
             </ButtonPrimary>
           </RevealItem>

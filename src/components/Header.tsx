@@ -35,7 +35,7 @@ export function Header() {
         </nav>
 
         <a
-          href="https://pay.cakto.com.br/y6cwwbn_1005908"
+          href="#planos"
           className="inline-flex items-center justify-center rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-slate-950 transition-transform hover:scale-[1.03]"
         >
           Assinar agora
