@@ -50,7 +50,7 @@ export function HowItWorks() {
             Esqueça a planilha.{" "}
             <span className="gradient-text">Fale com a Soraia.</span>
           </p>
-          <ButtonPrimary href="#planos">Assinar Soraia Pro</ButtonPrimary>
+          <ButtonPrimary href="#planos">Começar agora</ButtonPrimary>
         </div>
       </Container>
     </section>

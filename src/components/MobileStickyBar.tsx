@@ -12,7 +12,7 @@ export function MobileStickyBar() {
           href="#planos"
           className="inline-flex shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-violet-500 to-teal-400 px-5 py-2.5 text-sm font-semibold text-slate-950"
         >
-          Assinar
+          Ativar agora
         </a>
       </div>
     </div>

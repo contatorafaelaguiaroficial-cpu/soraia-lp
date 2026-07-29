@@ -48,7 +48,7 @@ export function Hero() {
 
           <RevealItem>
             <ButtonPrimary href="#planos">
-              Assinar Soraia Pro — R$ 19,90/mês
+              Ativar agora — R$ 19,90/mês
             </ButtonPrimary>
           </RevealItem>
 

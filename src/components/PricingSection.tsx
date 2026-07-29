@@ -60,7 +60,7 @@ export function PricingSection() {
               href="#top"
               className="mt-auto inline-flex items-center justify-center rounded-full bg-gradient-to-r from-violet-500 to-teal-400 px-6 py-3 text-sm font-semibold text-slate-950 transition-transform hover:scale-[1.02]"
             >
-              Assinar Soraia Pro
+              Ativar agora
             </a>
             <p className="text-center text-xs text-slate-500">
               Menos de R$ 0,67 por dia · 7 dias de garantia incondicional
