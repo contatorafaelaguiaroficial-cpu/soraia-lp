@@ -3,8 +3,8 @@ import { CHECKOUT_URL, LOGIN_URL } from "@/lib/links";
 
 const trustItems = [
   "Não pedimos acesso ao seu banco",
-  "Sem fidelidade",
-  "Menos de R$ 0,67 por dia no Pro",
+  "Garantia incondicional de 7 dias",
+  "Cancele quando quiser",
 ];
 
 export function Hero() {
@@ -23,21 +23,21 @@ export function Hero() {
         <Badge>Sua assistente financeira pessoal</Badge>
 
         <h1 className="max-w-3xl text-4xl font-semibold leading-[1.1] tracking-tight text-white sm:text-5xl md:text-6xl">
-          Descubra na hora se pode gastar{" "}
-          <span className="gradient-text">— sem abrir planilha</span>, sem
-          fazer conta.
+          A assistente que cuida do seu dinheiro{" "}
+          <span className="gradient-text">enquanto você vive a sua vida.</span>
         </h1>
 
         <p className="max-w-xl text-base leading-relaxed text-slate-400 sm:text-lg">
-          Fale com a Soraia como falaria com alguém de confiança. Conte um
-          gasto por texto ou áudio e saiba, em segundos, como isso muda seu
-          saldo — sem conectar sua conta bancária, sem senha, sem burocracia.
+          Conte um gasto por texto ou áudio pra Soraia. Ela identifica
+          padrões, avisa riscos e te diz o que está acontecendo com seu
+          saldo — antes que você precise perguntar. Sem conectar banco,
+          sem planilha.
         </p>
 
         <div className="flex flex-col gap-4 sm:flex-row">
-          <ButtonPrimary href={LOGIN_URL}>Criar conta grátis</ButtonPrimary>
+          <ButtonPrimary href={LOGIN_URL}>Testar grátis agora</ButtonPrimary>
           <ButtonSecondary href={CHECKOUT_URL}>
-            Conhecer o Soraia Pro — R$ 19,90/mês
+            Assinar Soraia Pro — R$ 19,90/mês
           </ButtonSecondary>
         </div>
 

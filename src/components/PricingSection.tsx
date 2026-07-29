@@ -52,7 +52,7 @@ export function PricingSection() {
               href={LOGIN_URL}
               className="mt-auto inline-flex items-center justify-center rounded-full border border-white/15 bg-white/[0.03] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/[0.08]"
             >
-              Criar conta grátis
+              Testar grátis agora
             </a>
           </div>
 
@@ -87,10 +87,10 @@ export function PricingSection() {
               href={CHECKOUT_URL}
               className="mt-auto inline-flex items-center justify-center rounded-full bg-gradient-to-r from-violet-500 to-teal-400 px-6 py-3 text-sm font-semibold text-slate-950 transition-transform hover:scale-[1.02]"
             >
-              Assinar Soraia Pro
+              Quero o Pro agora
             </a>
             <p className="text-center text-xs text-slate-500">
-              Menos de R$ 0,67 por dia · Sem fidelidade, cancele quando quiser
+              Menos de R$ 0,67 por dia · 7 dias de garantia incondicional
             </p>
           </div>
         </div>

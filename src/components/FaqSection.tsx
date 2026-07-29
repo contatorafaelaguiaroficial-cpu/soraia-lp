@@ -21,6 +21,10 @@ const faqs = [
     a: "Faça o cadastro usando o mesmo e-mail informado no pagamento. A assinatura Pro será vinculada automaticamente.",
   },
   {
+    q: "E se eu não gostar?",
+    a: "Você tem 7 dias pra testar o Soraia Pro. Se não for pra você, devolvemos 100% do valor pago, sem perguntas.",
+  },
+  {
     q: "Posso cancelar depois?",
     a: "Sim. A assinatura é mensal, sem fidelidade, e pode ser cancelada a qualquer momento direto no app.",
   },

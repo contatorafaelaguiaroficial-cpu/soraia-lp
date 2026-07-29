@@ -3,6 +3,7 @@ import { LOGIN_URL } from "@/lib/links";
 
 const links = [
   { label: "O problema", href: "#problema" },
+  { label: "Como funciona", href: "#como-funciona" },
   { label: "Recursos", href: "#recursos" },
   { label: "Segurança", href: "#seguranca" },
   { label: "Planos", href: "#planos" },
@@ -38,7 +39,7 @@ export function Header() {
           href={LOGIN_URL}
           className="inline-flex items-center justify-center rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-slate-950 transition-transform hover:scale-[1.03]"
         >
-          Criar conta grátis
+          Testar grátis agora
         </a>
       </Container>
     </header>

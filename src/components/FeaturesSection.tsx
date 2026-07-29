@@ -1,4 +1,5 @@
 import { ButtonPrimary, Container, SectionHeading } from "./ui";
+import { LOGIN_URL } from "@/lib/links";
 
 const features = [
   {
@@ -56,7 +57,9 @@ export function FeaturesSection() {
           ))}
         </div>
 
-        <ButtonPrimary href="#planos">Quero usar a Soraia</ButtonPrimary>
+        <ButtonPrimary href={LOGIN_URL}>
+          Quero controlar meu dinheiro agora
+        </ButtonPrimary>
       </Container>
     </section>
   );
